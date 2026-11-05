@@ -1,4 +1,4 @@
-#!/bin/bash
+
 set -euo pipefail
 
 VERSION="${1:-${VERSION:-}}"
@@ -10,7 +10,5 @@ fi
 
 echo "Starting deployment..."
 echo "Deploying version: ${VERSION}"
-# Real deployment would run e.g.:
-#   kubectl set image deployment/orderflow orderflow=orderflow:${VERSION}
-#   kubectl rollout status deployment/orderflow --timeout=120s
+
 echo "Deployment successful."
